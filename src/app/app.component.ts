@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+import {Component} from '@angular/core';
+import {COURSES} from '../db-data';
+import {Course} from './model/course';
+import {isObservable} from 'rxjs';
+=======
 import {ChangeDetectionStrategy, ChangeDetectorRef, Component, DoCheck, Inject, Injector, OnInit} from '@angular/core';
 import {Course} from './model/course';
 import {Observable} from 'rxjs';
@@ -10,6 +16,7 @@ import {CourseCardComponent} from './courses/course-card/course-card.component';
 import {CourseImageComponent} from './courses/course-image/course-image.component';
 import {NgForOf} from '@angular/common';
 
+>>>>>>> master
 
 @Component({
   selector: 'app-root',
@@ -22,6 +29,14 @@ import {NgForOf} from '@angular/common';
   ],
   standalone: true
 })
+<<<<<<< HEAD
+export class AppComponent {
+  courses = COURSES;
+  protected readonly isObservable = isObservable;
+
+  onCourseSelected(course: Course) {
+    console.log(course);
+=======
 export class AppComponent implements OnInit {
 
     courses: Course[] = COURSES;
@@ -55,6 +70,7 @@ export class AppComponent implements OnInit {
                 () => console.log('Course Saved!')
             );
     }
+>>>>>>> master
 
-
+  }
 }

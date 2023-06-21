@@ -41,10 +41,13 @@
               {
                 "input": "node_modules/document-register-element/build/document-register-element.js",
                 "inject": true
+<<<<<<< HEAD
+=======
               },
               {
                 "input": "node_modules/document-register-element/build/document-register-element.js",
                 "inject": true
+>>>>>>> master
               }
             ],
             "vendorChunk": true,
@@ -153,6 +156,10 @@
     }
   },
   "cli": {
+<<<<<<< HEAD
+    "analytics": "3ac3ddb5-53ee-4464-b4bb-1363d03123d0"
+=======
     "analytics": "e878a578-eb4f-4c7c-bbaf-6f0c4ac42135"
+>>>>>>> master
   }
 }

@@ -1,0 +1,9 @@
+.course-card.beginner {
+  background-color: lightsalmon;
+}
+
+/* Set the position and size of the element */
+.course-card {
+  position: relative;
+}
+

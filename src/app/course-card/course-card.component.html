@@ -1,0 +1,21 @@
+<div [ngClass]="cardClasses()" class="course-card">
+  <div class="content">
+    <div [style.text-decoration]="'underline'" class="course-title">{{ index }} - {{ course.description }}</div>
+
+    <img *ngIf="!!course.iconUrl; else noImage" [src]="course.iconUrl" alt="Angular Logo" width="300">
+    <ng-template #noImage>
+      <p> 7maaaaadaaaaa ana7</p>
+    </ng-template>
+
+    <div class="course-description">{{ course.longDescription }}</div>
+
+    <div class="course-category">
+      <div *ngIf="!!course.category; else noCategory" class="category">{{ course.category }}</div>
+      <ng-template #noCategory>
+        <div class="category">All Level</div>
+      </ng-template>
+    </div>
+
+    <button (click)="onViewCourse()">View Course</button>
+  </div>
+</div>
